@@ -1,14 +1,14 @@
 # Dev. Full Stack - Projeto 04 - React Native
 
-Pós-graduações em Tecnologia,
-Inovação e Negócios Digitais
-Desenvolvimento Web Full Stack
-Disciplina: React JS
+Pós-graduações em Tecnologia, Inovação e Negócios Digitais Desenvolvimento Web Full Stack
+
+Disciplina: React Native
+
 Professor: Tiago Luiz Ribeiro da Silva
+
 Aluno: Francis Targanski
 
-Projeto Final da disciplina React Native do curso de
-Desenvolvedor Web Full Stack do programa de Pósgraduações em Tecnologia, Inovação e Negócios Digitais
+Projeto Final da disciplina React Native do curso de Desenvolvedor Web Full Stack do programa de Pósgraduações em Tecnologia, Inovação e Negócios Digitais
 
 *****
 
