@@ -43,7 +43,7 @@ const authLogin = async (app, emailText, passwordText) => {
     };
   } catch (err) {
     let message = "Erro ao realizar registro";
-    console.log(err.toString());
+    // console.log(err.toString());
 
     if (err.toString().indexOf("auth/invalid-email") > -1) {
       message = "Dados inválidos";
@@ -71,11 +71,11 @@ const authRegister = async (app, email, password) => {
     });
     return {
       status: 200,
-      message: "Usuário criado co sucesso!",
+      message: "Usuário criado com sucesso!",
     };
   } catch (err) {
     let message = "Erro ao realizar login";
-    console.log(err.toString());
+    // console.log(err.toString());
 
     if (err.toString().indexOf("auth/invalid-email") > -1) {
       message = "Dados inválidos";

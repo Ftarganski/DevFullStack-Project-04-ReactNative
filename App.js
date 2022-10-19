@@ -22,13 +22,13 @@ const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDPPMgQ00pDc9C4GCSgdhOZBS7EoQse8NI",
-  authDomain: "bike-clock.firebaseapp.com",
-  projectId: "bike-clock",
-  storageBucket: "bike-clock.appspot.com",
-  messagingSenderId: "123734604851",
-  appId: "1:123734604851:web:448e3f8bb6e042a07af746",
-  measurementId: "G-MH2JEGYHSF"
+  apiKey: "AIzaSyAdsBacJR3yzxHthiRLl0oF4OqLL3uO-xI",
+  authDomain: "projetoclock.firebaseapp.com",
+  projectId: "projetoclock",
+  storageBucket: "projetoclock.appspot.com",
+  messagingSenderId: "831697563853",
+  appId: "1:831697563853:web:080bbabec665fd52aab984",
+  measurementId: "G-Q7YCWLBXCG"
 };
 
 const firebaseApp = initializeApp(firebaseConfig);
@@ -67,7 +67,7 @@ export default function App() {
 
               return <Icon name={icon} size={size} color={color} />;
             },
-            tabBarActiveTintColor: "blue",
+            tabBarActiveTintColor: "black",
             tabBarInactiveTintColor: "gray",
           })}
           initialRouteName="Profile"
