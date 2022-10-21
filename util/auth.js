@@ -39,7 +39,7 @@ const authLogin = async (app, emailText, passwordText) => {
     });
     return {
       status: 200,
-      message: "Usuário logado co sucesso!",
+      message: "Usuário logado com sucesso!",
     };
   } catch (err) {
     let message = "Erro ao realizar registro";
@@ -56,11 +56,12 @@ const authLogin = async (app, emailText, passwordText) => {
   }
 };
 
-const authRegister = async (app, email, password) => {
+const authRegister = async (app, emailCreate, password) => {
   const auth = getAuth(app);
+  
   try {
-    const result = await createUserWithEmailAndPassword(auth, email, password);
-    const { displayName, email, phoneNumber, photoURL, uid } = auth.currentUser;
+    const result = await createUserWithEmailAndPassword(auth, emailCreate, password);
+    const { displayName, email, phoneNumber, photoURL, uid, passwordText } = auth.currentUser;
     storeData("user", {
       displayName,
       email,
@@ -73,8 +74,8 @@ const authRegister = async (app, email, password) => {
       status: 200,
       message: "Usuário criado com sucesso!",
     };
-  } catch (err) {
-    let message = "Erro ao realizar login";
+      } catch (err) {
+         let message = "Erro ao realizar login";
     // console.log(err.toString());
 
     if (err.toString().indexOf("auth/invalid-email") > -1) {
